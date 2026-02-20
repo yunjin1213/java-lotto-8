@@ -28,4 +28,15 @@ public class Lotto {
             throw new IllegalArgumentException(ErrorMessage.DUPLICATE_NUMBER.getMessage());
         }
     }
+
+    public boolean contains(int number) {
+        return numbers.contains(number);
+    }
+
+    public int countMatchingNumbers(Lotto otherLotto) {
+        return (int) numbers.stream()
+                .filter(otherLotto::contains)
+                .count();
+    }
 }
+
