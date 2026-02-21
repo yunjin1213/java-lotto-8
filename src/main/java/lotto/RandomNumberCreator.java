@@ -4,18 +4,8 @@ import java.util.List;
 
 public class RandomNumberCreator {
     public List<Integer> createRandomLottoNumbers() {
-        List<Integer> numbers = camp.nextstep.edu.missionutils.Randoms.pickUniqueNumbersInRange(1,45,6);
+        List<Integer> numbers = camp.nextstep.edu.missionutils.Randoms.pickUniqueNumbersInRange(Lotto.MINIMUM_NUMBER,Lotto.MAXIMUM_NUMBER,Lotto.NUMBERS_COUNT);
 
         return numbers;
-    }
-
-    public int createUniqueRandomNumber(List<Integer> excludedNumbers) {
-        int number = camp.nextstep.edu.missionutils.Randoms.pickNumberInRange(1, 45);
-
-        while(!excludedNumbers.contains(number)){
-            number = camp.nextstep.edu.missionutils.Randoms.pickNumberInRange(1, 45);
-        }
-
-        return number;
     }
 }
