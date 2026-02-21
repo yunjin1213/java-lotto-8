@@ -1,10 +1,13 @@
 package lotto;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Lotto {
     private final List<Integer> numbers;
+
+    public static final int MINIMUM_NUMBER = 1;
+    public static final int MAXIMUM_NUMBER = 45;
+    public static final int NUMBERS_COUNT = 6;
 
     // TODO: Lotto랑 WinningLotto가 유사한 면이 있음. abstract class나 interface를 사용하는 것을 고민해봐야 함.
 
@@ -41,7 +44,7 @@ public class Lotto {
     }
 
     private void validateCount(List<Integer> numbers) {
-        if (numbers.size() != 6) {
+        if (numbers.size() != NUMBERS_COUNT) {
             throw new IllegalArgumentException("[ERROR] 로또 번호는 6개여야 합니다.");
         }
     }

@@ -3,6 +3,8 @@ package lotto;
 import java.util.List;
 
 public class Receipt {
+    public static final int LOTTO_PRICE = 1000;
+
     private int amountOfMoney;
     private int amountOfLotteries;
 

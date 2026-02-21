@@ -5,8 +5,7 @@ import java.util.Map;
 public class Calculator {
 
     public int calculateAmountOfLotteriesWithMoney(int money) {
-        return money / 1000;
-        // TODO: magic number 처리
+        return money / Receipt.LOTTO_PRICE;
     }
 
     public Long calculatePrize(Map<Rank, Integer> rankCount) {

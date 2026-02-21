@@ -73,21 +73,21 @@ public class Service {
         return result;
     }
 
+    // TODO: refactoring 해야 함. service가 rank를 결정해주는게 적절하지 않음.
     private Rank determineRank(int matchCount, boolean bonusMatch) {
-        // 맘에 들지 않지만.. 얘를 누가 책임져야 할 지 더 고민해보자.
-        if (matchCount == 6) {
+        if (matchCount == Rank.First.getMatchCount()) {
             return Rank.First;
         }
-        if (matchCount == 5 && bonusMatch) {
+        if (matchCount == Rank.Second.getMatchCount() && bonusMatch) {
             return Rank.Second;
         }
-        if (matchCount == 5) {
+        if (matchCount == Rank.Third.getMatchCount()) {
             return Rank.Third;
         }
-        if (matchCount == 4) {
+        if (matchCount == Rank.Fourth.getMatchCount()) {
             return Rank.Fourth;
         }
-        if (matchCount == 3) {
+        if (matchCount == Rank.Fifth.getMatchCount()) {
             return Rank.Fifth;
         }
         return Rank.MISS;
