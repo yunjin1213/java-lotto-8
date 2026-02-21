@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Map;
 
 public class Controller {
-    // input / output과 service 연결
     private Input input = new Input();
     private Output output = new Output();
     private Service service = new Service();
@@ -54,7 +53,6 @@ public class Controller {
     }
 
     private Map<Rank, Integer> createRankCount(WinningLotto winningLotto, List<Lotto> lotteries) {
-        //굳이 이긴 하다..
         Map<Rank, Integer> rankCounts = service.createRankCounts(winningLotto, lotteries);
         output.printWinningStatistics(rankCounts);
 

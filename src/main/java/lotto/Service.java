@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 public class Service {
+    //TODO: AppConfig 도입하기
+
     Calculator calculator = new Calculator();
     RandomNumberCreator randomNumberCreator = new RandomNumberCreator();
 

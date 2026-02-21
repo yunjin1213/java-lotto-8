@@ -7,6 +7,7 @@ import java.util.List;
 
 public class Input {
 
+    //TODO: 1000원 단위 검증 도입.
     public int readPurchaseAmount() {
         System.out.println("구입금액을 입력해 주세요.");
         String input = Console.readLine();
