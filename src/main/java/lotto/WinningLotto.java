@@ -7,7 +7,7 @@ public class WinningLotto {
     private int bonusNumber;
 
     public WinningLotto(List<Integer> numbers, int bonusNumber) {
-        // 최후의 보루로서 검증이 필요함.
+        // TODO: validate 필요함.
 
         this.numbers = numbers;
         this.bonusNumber = bonusNumber;

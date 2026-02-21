@@ -6,7 +6,6 @@ import java.util.List;
 public class Lotto {
     private final List<Integer> numbers;
 
-    // indent 2개 이하 지키기...
     // TODO: Lotto랑 WinningLotto가 유사한 면이 있음. abstract class나 interface를 사용하는 것을 고민해봐야 함.
 
     public Lotto(List<Integer> numbers) {

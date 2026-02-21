@@ -19,7 +19,6 @@ public class Service {
     }
 
     public List<Lotto> createLotteries(int amountOfLotteries) {
-        // 개수 -> 로또 발급!
 
         List<Lotto> lotteries = new ArrayList<>();
 
@@ -29,7 +28,6 @@ public class Service {
 
             lotteries.add(lotto);
         }
-        // perhaps,, lotteries의 개수 검증..??
         return lotteries;
     }
 

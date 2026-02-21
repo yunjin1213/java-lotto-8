@@ -9,7 +9,6 @@ public class Output {
         System.out.println(count + "개를 구매했습니다.");
     }
 
-    // 로또 번호는 이미 오름차순 정렬된 List<Integer>라고 가정
     public void printLotteries(List<List<Integer>> lotteries) {
         for (List<Integer> numbers : lotteries) {
             System.out.println(numbers);
